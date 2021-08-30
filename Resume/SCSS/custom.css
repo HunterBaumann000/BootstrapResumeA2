@@ -1,23 +1,17 @@
-@import "Resume/SCSS/bootstrap.css";
-.bg-primary {
-  background-color: black;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "ss";
+ *   |         ^^^^
+ *   '
+ *   custom.scss 1:9  root stylesheet */
 
-body {
-  background-color: #86bcf6;
-  font-family: "Helvetica", serif;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"ss\";\d\a   \2502          ^^^^\a   \2575 \a   custom.scss 1:9  root stylesheet";
 }
-
-footer {
-  background-color: #23305e;
-}
-
-.btn {
-  background-color: black;
-}
-
-.jumbotron {
-  background-color: #d6e6f6;
-}
-
-/*# sourceMappingURL=custom.css.map */
